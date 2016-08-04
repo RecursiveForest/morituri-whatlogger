@@ -1,5 +1,5 @@
 ## Status
-[![Build Status](https://travis-ci.org/JoeLametta/morituri-eaclogger.svg?branch=master)](https://travis-ci.org/JoeLametta/morituri-eaclogger)
+[![Build Status](https://travis-ci.org/RecursiveForest/morituri-whatlogger.svg?branch=master)](https://travis-ci.org/RecursiveForest/morituri-whatlogger)
 
 ## Using
 
@@ -7,8 +7,8 @@ To use this plugin:
 
 * build it:
 
-        git clone git://github.com/JoeLametta/morituri-eaclogger.git
-        cd morituri-eaclogger
+        git clone git://github.com/RecursiveForest/morituri-whatlogger.git
+        cd morituri-whatlogger
         python2 setup.py bdist_egg
 
 * copy it to your plugin directory:
@@ -24,8 +24,7 @@ To use this plugin:
 
 * use it:
 
-        rip cd rip --logger=eac
-
+	rip cd rip -L what
 
 ## Developers
 

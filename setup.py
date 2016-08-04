@@ -1,14 +1,15 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="morituri-eaclogger",
+    name="morituri-whatlogger",
     version="0.2.1",
-    description="""morituri EAC-style logger""",
+    description="""morituri what.cd-enhanced EAC-style logger""",
     author="superveloman",
+    maintainer="Samantha Baldwin",
     packages=[
-        'eaclogger',
-        'eaclogger.logger'],
+        'whatlogger',
+        'whatlogger.logger'],
     entry_points="""
   [morituri.logger]
-  eac = eaclogger.logger.eac:EacLogger
+  what = whatlogger.logger.what:WhatLogger
   """)
