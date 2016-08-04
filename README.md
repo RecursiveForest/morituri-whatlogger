@@ -20,7 +20,7 @@ To use this plugin:
 
         rip cd rip --help
 
-   You should see 'eac' as a possible logger.
+   You should see 'what' as a possible logger.
 
 * use it:
 
