@@ -112,10 +112,10 @@ class WhatLogger(result.Logger):
         # toc
         lines.append("TOC of the extracted CD")
         lines.append("")
-        lines.append(
-            "     Track |   Start  |  Length  | Start sector | End sector ")
-        lines.append(
-            "    ---------------------------------------------------------")
+       	lines.append(
+                "     Track |   Start  |  Length  | Start sector | End sector | Pre-emphasis ")
+       	lines.append(
+                "    ------------------------------------------------------------------------")
         table = ripResult.table
 
         htoa = None
@@ -140,12 +140,16 @@ class WhatLogger(result.Logger):
             start = t.getIndex(1).absolute
             length = table.getTrackLength(t.number)
             end = table.getTrackEnd(t.number)
+	    if t.pre_emphasis:
+	        p = "Yes"
+	    else:
+	        p = "No"
             lines.append(
-                "       %2d  | %s | %s |    %6d    |   %6d   " % (
+                "       %2d  | %s | %s |    %6d    |   %6d   |       %3s" % (
                     t.number,
                     self._framesToMSF(start),
                     self._framesToMSF(length),
-                    start, end))
+                    start, end, p))
 
         lines.append("")
 
