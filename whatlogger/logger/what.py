@@ -5,6 +5,7 @@ from morituri.common import common
 from morituri.configure import configure
 from morituri.result import result
 
+version = "0.2.2"
 
 class WhatLogger(result.Logger):
 
@@ -52,6 +53,9 @@ class WhatLogger(result.Logger):
         # version string; FIXME
         lines.append("morituri version %s" % configure.version)
         lines.append("")
+
+	lines.append("morituri-whatlogger version %s" % version)
+	lines.append("")
 
         date = time.strftime("%Y-%m-%dT%H:%M:%S", time.gmtime(epoch)).strip()
         lines.append("morituri extraction logfile from %s" % date)
