@@ -1,3 +1,13 @@
+## morituri-whatlogger
+
+morituri-whatlogger is an EAC-like logger module for [whipper](), a cdda extraction tool favoring accuracy over speed.
+morituri-whatlogger is a backwards incompatible set of enhancements over the [morituri-eaclogger]().
+Despite the name, the logger is incompatible with morituri and only targets whipper.
+
+## Improvements on morituri-eaclogger
+
+- Superior pre-emphasis support
+
 ## Status
 [![Build Status](https://travis-ci.org/RecursiveForest/morituri-whatlogger.svg?branch=master)](https://travis-ci.org/RecursiveForest/morituri-whatlogger)
 
@@ -13,8 +23,9 @@ To use this plugin:
 
 * copy it to your plugin directory:
 
-        mkdir -p $HOME/.morituri/plugins
-        cp dist/morituri_*egg $HOME/.morituri/plugins
+	set-if-unset XDG_CONFIG_HOME=$HOME/.config
+        mkdir -p $XDG_CONFIG_HOME/.whipper/plugins
+        cp dist/morituri_*egg $XDG_CONFIG_HOME/.whipper/plugins
 
 * verify that it gets recognized:
 
