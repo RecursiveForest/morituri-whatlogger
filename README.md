@@ -23,7 +23,7 @@ To use this plugin:
 
 * copy it to your plugin directory:
 
-	set-if-unset XDG_CONFIG_HOME=$HOME/.config
+        export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-"${HOME}/.config"}
         mkdir -p $XDG_CONFIG_HOME/.whipper/plugins
         cp dist/morituri_*egg $XDG_CONFIG_HOME/.whipper/plugins
 
@@ -35,7 +35,7 @@ To use this plugin:
 
 * use it:
 
-	rip cd rip -L what
+        rip cd rip -L what
 
 ## Developers
 
