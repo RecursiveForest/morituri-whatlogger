@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="morituri-whatlogger",
-    version="0.2.2",
+    version="0.2.3",
     description="""morituri what.cd-enhanced EAC-style logger""",
     author="superveloman",
     maintainer="Samantha Baldwin",
