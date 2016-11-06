@@ -24,8 +24,8 @@ To use this plugin:
 * copy it to your plugin directory:
 
         export XDG_DATA_HOME=${XDG_DATA_HOME:-"${HOME}/.config"}
-        mkdir -p $XDG_DATA_HOME/.whipper/plugins
-        cp dist/morituri_*egg $XDG_DATA_HOME/.whipper/plugins
+        mkdir -p $XDG_DATA_HOME/whipper/plugins
+        cp dist/morituri_*egg $XDG_DATA_HOME/whipper/plugins
 
 * verify that it gets recognized:
 
